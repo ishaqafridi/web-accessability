@@ -17,6 +17,9 @@ The system consists of:
  📁 2. Dataset Preparation
 
  FineWebEdu Dataset
+ from datasets import load_dataset
+# Login using e.g. `huggingface-cli login` to access this dataset
+ds = load_dataset("HuggingFaceFW/fineweb-edu", "default")
  Size: 1.3T tokens (first version)
  Contains filtered instructional web pages
  Annotated by LLaMA370Binstruct (450k samples)
